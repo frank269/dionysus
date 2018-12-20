@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111896927-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111896927-1');
+</script>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="image_src" href="images/ss5-ddst-img.jpg" />
+<title>Tết truyền thống</title> 
+<!-- For-Mobile-Apps-and-Meta-Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //For-Mobile-Apps-and-Meta-Tags -->
+<!-- Custom Theme files -->
+<!--    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/style1.css" type="text/css" rel="stylesheet" media="all"> 
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/smoothbox.css" type='text/css' media="all" />
+    <link rel="stylesheet" href="css/countdown.css" type='text/css' media="all" />
+<!--    <link rel="stylesheet" href="Magnific-Popup-master/dist/magnific-popup.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<!-- //Custom Theme files -->
+<!-- font-awesome-icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- //font-awesome-icons -->
+    
+<!-- js -->
+    <!-- jquery -->
+    <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <!-- serialize form to json -->
+    <script src="js/jquery.serialize-object.js"></script>  
+<!-- //js -->
+<!-- Countdown script -->
+<!-- web-fonts -->  
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Bitter:400,400i,700&subset=latin-ext" rel="stylesheet">
+<!-- //web-fonts -->
+<!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1486861158275324');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1486861158275324&ev=PageView&noscript=1"
+    /></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- HEAT MAP -->
+    <script>
+    (function(h,e,a,t,m,p) {
+    m=e.createElement(a);m.async=!0;m.src=t;
+    p=e.getElementsByTagName(a)[0];p.parentNode.insertBefore(m,p);
+    })(window,document,'script','https://u.heatmap.it/log.js');
+    </script>
+<!-- END HEAT MAP -->
+</head>
+<body class="bg">
+<!-- SCRIPT -->
+	<script type="text/javascript" src="js/slide-from-top.js"></script> 
+	<script type="text/javascript">
+      $(document).ready(function() {
+         $('.mobile-side-menu').slideFromTop({
+            menuBtn: $('.toggleMenu'),
+            navbar: $('.navbar'),
+            menuSpeed: 500,
+            bodyOverlay: $('.overlay')
+         });
+        $("#testimonial-slider").owlCarousel({
+            items:2,
+            itemsDesktop:[1000,2],
+            itemsDesktopSmall:[979,2],
+            itemsTablet:[767,1],
+            pagination: true,
+            autoPlay:true
+        });
+        $('#next-personal-info-right').on('click', function() {
+            console.log('click')
+            $('#js-personal-info-left').addClass('slide-out-left');
+            $('#js-personal-info-right').addClass('slide-in-right');
+        });
+        $('#prev-personal-info-left').on('click', function() {
+            $('#js-personal-info-right').removeClass('slide-in-right');
+            $('#js-personal-info-left').removeClass('slide-out-left');
+        });
+        //GetLead
+        var $form = $('form#preorderform'),
+            url = 'https://script.google.com/macros/s/AKfycbx8EFdJxZvVeHqtxbQm2tHfvfCDJIcZsy1AC_sKrEahbbgB_FCJ/exec'
+
+        $('#submit-form').on('click', function(e) {
+          e.preventDefault();
+          var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: $form.serializeObject()
+          }).success(function(data){
+              fbq('track', 'Complete');
+          });
+        })  
+        //Done GetLead
+        //Smooth Scroll
+        $("a[href^='#']").on('click', function(e) {
+
+           // prevent default anchor click behavior
+           e.preventDefault();
+
+           // store hash
+           var hash = this.hash;
+
+           // animate
+           $('html, body').animate({
+               scrollTop: $(hash).offset().top
+             }, 300, function(){
+
+               // when done, add hash to url
+               // (default click behaviour)
+               window.location.hash = hash;
+             });
+        });
+        //END SMOOTH SCROLL
+        const second = 1000,
+              minute = second * 60,
+              hour = minute * 60,
+              day = hour * 24;
+
+        let countDown = new Date('Jan 31, 2018 00:00:00').getTime(),
+            x = setInterval(function() {
+
+              let now = new Date().getTime(),
+                  distance = countDown - now;
+
+              document.getElementById('days').innerHTML = Math.floor(distance / (day)),
+                document.getElementById('hours').innerHTML = Math.floor((distance % (day)) / (hour)),
+                document.getElementById('minutes').innerHTML = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById('seconds').innerHTML = Math.floor((distance % (minute)) / second);
+
+              //do something later when date is reached
+              //if (distance < 0) {
+              //  clearInterval(x);
+              //  'IT'S MY BIRTHDAY!;
+              //}
+
+            }, second)
+      });
+    </script>
+    <script> //Hàm cộng trừ số lượng hàng
+        function plus() {
+                oldval = document.getElementById("sl").value;
+                newval = Number(oldval)+1;
+                document.getElementById("sl").value = newval;
+            }
+            function minus() {
+                oldval = document.getElementById("sl").value;
+                if(Number(oldval) < 1){
+                    newval = 0;
+                }else{
+                    newval = Number(oldval)-1;}
+                document.getElementById("sl").value = newval;
+            }
+    </script>
+<!-- SCRIPT -->
+    
+    
+    
+    
+    
+    
+<!-- ************ Nav *************** -->
+    <nav class="navbar navbar-fixed-top geraud-nav navbar-default" data-spy="affix" data-offset-top="197">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#geraudNav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#hero"><img alt="Brand" src="images/branding.png" style="height:50px;"></a>
+        </div>
+        <div class="collapse navbar-collapse geraud-nav-inner" id="geraudNav">
+            <ul class="nav navbar-nav">
+                <li><a href="#sanphamtinhhoa">Sản phẩm tinh hoa</a></li>
+                <li><a href="#whyGeraud">Điều Đặc Biệt</a></li>
+                <li><a href="#session_4">Khách Hàng</a></li>
+                <li><a href="#session_6">Liên hệ</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#session_3">Đặt hàng ngay giảm giá 45%</a></li>
+                <li><a href="tel:0886424536" style="color:#ffc548; font-size:1em;">0979.019.082</a></li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+<!-- *********** //Nav ************** -->
+    
+    
+    
+    <!-- Trao yêu thương - Nhận hạnh phúc -->
+    
+<!-- ************ S1 **************** -->
+<section class="hero" id="hero">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <a class="hero-brand" href="index.html" title="Home">
+                    <img style="width:90%;" src="images/ss1-welcome2.png">
+                </a>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-offset-1 col-md-10">
+               <h1 style="color:#042640; text-transform:uppercase;padding:10px;font-size:2.5em;">Tết Truyền Thống</h1>
+                <p class="tagline">
+                    QUÀ TẾT ĐỘC, TÀI LỘC ĐẦY NHÀ VỚI SET HỘP QUÀ GERAUD<br>
+                </p>         
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-md-12">
+                <a class="btn btn-full" href="#session_3">Đăng ký đặt hàng ngay</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- *********** //S1 *************** -->    
+    
+    
+    
+<!-- *********** Câu chuyện thương hiệu ************ -->
+    <div class="brandstory container-fluid">
+            <div class="row" style="display:flex;align-items:center;">
+                <div class="col-md-6 col-xs-12 text-center">
+                    <div class="row">
+                        <image src="images/ss2-cauchuyenthuonghieu.png" style="width:60%;"></image>
+                    </div>
+                    <div class="row">
+                        <p class="brandstory-inner">
+                            Dionysus trong thần thoại Hy Lạp là vị thần rượu vang, con trai của thần Zeus với một công chúa người trần tên Semele. Vì phải tránh cơn ghen tuông của Héra, nên thần Zeus đã đem đứa bé về hòn đảo mà mình được nuôi lớn năm xưa cho các nàng tiên Xyphanh chăm sóc. Cậu bé được đặt tên là Dionysus, và sống vui vẻ giữa các nàng tiên cho đến khi thành một chàng trai khoẻ mạnh.
+                            Một ngày, đi hái nho về, cho tất cả vào chậu, rồi để ở chân tường. Khi chàng với tay lên lấy đồ ở trên giá, chàng vô tình giẫm vào chậu nho. Chàng không biết nên làm thế nào, liền để lại trong hang rồi ra về. Vài ngày sau, chàng quay trở lại thì thấy có một mùi rất thơm toả ra từ chậu nho bị giẫm nát hôm trước. Khi uống nước nho vào thì có cảm giác sảng khoái và nước cũng rất ngon. Dionysus rất thích thứ nước đó và đặt tên nó là rượu nho.
+                        </p>
+                    </div>
+                    <div class="row hidden-xs">
+                        <image class="brandstorylogo" src="images/branding.png"></image>
+                    </div>
+                </div>
+                <div class="col-md-6 hidden-xs text-center">
+                        <image class="brandstoryimg" src="images/thuongHieu.png"></image>
+                </div>
+            </div>
+            <!-- <div class="row visible-xs">
+                <div class="col-xs-12 text-center">
+                        <image class="brandstoryimg" src="images/ss2-cauchuyenthuonghieu-img.jpg"></image>
+                </div>
+            </div> -->
+        </div>
+<!-- ********** //Câu chuyện thương hiệu *********** -->
+    
+    
+    
+    
+<!-- *********** HẠT VÀ MỨT *********** -->
+    <div class="hm container-fluid" id="sanphamtinhhoa">
+<!--
+        <image class="hidden-xs" src="images/ss3-mutvahat_web.png" style="width:100%;margin:0px;"></image>
+        <image class="visible-xs" src="images/ss3-mutvahat_mb.png"></image>
+-->
+    </div>
+<!-- ********** //HẠT VÀ MỨT *********** -->
+    
+    
+    
+    
+    
+<!-- ********** Hương vị ngày tết *********** -->
+    <div class="container-fluid">
+        <div class="brandstory">
+            <div class="row" style="display:flex;align-items:center;">
+                <div class="col-md-5 hidden-xs text-center">
+                        <image class="brandstoryimg" src="images/ss3-mutvahat-img.jpg"></image>
+                </div>
+                <div class="col-md-7 col-xs-12 text-center">
+                    <div class="row">
+                        <image src="images/ss3-mutvahat-text.png" style="width:40%;"></image>
+                    </div>
+                    <div class="row">
+                        <p class="brandstory-inner">
+                            Ngày Tết sum vầy dường như sẽ không trọn vẹn nếu thiếu đi vị ngọt của mứt Tết. Ăn miếng mứt uống miếng trà nóng đăng đắng vào có cảm giác sướng tê nơi đầu lưỡi, ấm cả người. Ngồi ăn mứt, thưởng trà trao nhau câu chúc đầu xuân, gửi nhau những câu chuyện năm cũ, năm mới. Cái không khí rôm rả ngày Tết như trọn vẹn hơn.<br>
+                            Còn với hạt điều dường như sinh ra với thiên chức chăm lo cho sức khỏe như người bạn tốt của con người với những dinh dưỡng thân thiện giúp gìn giữ sự khỏe mạnh của tim mạnh, điều hòa huyết áp, giảm ngừa bệnh tật và giúp giảm béo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row visible-xs">
+                <div class="col-xs-12 text-center">
+                        <image class="brandstoryimg" src="images/ss3-mutvahat-img.jpg"></image>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ********* //Hương vị ngày tết ********** -->
+    
+    
+    
+<!-- ********** Lạc Đạo Bách Nhật *********** -->
+    <div class="ldbn container-fluid">
+    </div>    
+<!-- ********* //Lạc Đạo Bách Nhật ********** -->
+    
+    
+    
+    
+    
+<!-- ********** Tinh Hoa Rượu Việt *********** -->
+    <div class="container-fluid">
+        <div class="brandstory">
+            <div class="row" style="display:flex;align-items:center;">
+                <div class="col-md-5 col-xs-12 text-center">
+                    <div class="row">
+                        <image src="images/ss4-lacdaobachnhat-text.png" style="width:60%;"></image>
+                    </div>
+                    <div class="row">
+                        <p class="brandstory-inner">
+                            Rượu Lạc Đạo Bách Nhật nổi tiếng từ thế kỷ 16 dưới thời Trạng nguyên Dương Phúc Tư – ông Tổ họ Dương của người Làng Ngọc. Là một loại rượu ngon hiếm thấy, xưa rượu Lạc Đạo Bách Nhật  được dùng để cung tiến vua chúa. Rượu có hương thơm nồng của lúa nếp, vị êm dịu se cay của 36 loại men thảo dược. Độ rượu cao mà không hề sốc, lại hết sức êm say. Thật không quá lời khi nói rượu Lạc Đạo chỉ dành cho những người sành rượu, biết thưởng thức rượu.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-7 hidden-xs text-center">
+                        <image class="brandstoryimg" src="images/ss4-lacdaobachnhat-img.jpg"></image>
+                </div>
+            </div>
+            <div class="row visible-xs">
+                <div class="col-xs-12 text-center">
+                        <image class="brandstoryimg" src="images/ss4-lacdaobachnhat-img.jpg"></image>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ********* //Tinh Hoa Rượu Việt ********** -->
+    
+    
+    
+    
+<!-- ********** Tại sao lựa chọn Geraud *********** -->
+    <div class="tsgr container-fluid" id="whyGeraud">
+    </div> 
+<!-- ********* //Tại sao lựa chọn Geraud ********** -->
+    
+    
+    
+    
+<!-- ********* Thiết kế sang trọng ********** -->
+    <div class="sa container-fluid">
+            <div class="row" style="display:flex;align-items:center;">
+                <div class="col-md-6 col-xs-6 text-center">
+                    <div class="row">
+                        <image src="images/ss5-thietke-text.png" style="width:50%;"></image>
+                    </div>
+                    <div class="row hidden-xs">
+                        <p class="text-center">
+                        Thiết kế gói quà độc đáo, màu vàng cách tân, xu thế của Tết Mậu Tuất 2018
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-6 p0 text-left">
+                    <image class="saimg" src="images/ss5-thietke-img.jpg"></image>
+                </div>
+            </div>
+            <div class="row" style="display:flex;align-items:center;">                
+                <div class="col-md-6 col-xs-6 p0 text-right">
+                    <image class="saimg" src="images/ss5-ddst-img.jpg"></image>
+                </div>
+                <div class="col-md-6 col-xs-6 text-center">
+                    <div class="row">
+                        <image src="images/ss5-ddst-text.png" style="width:60%;"></image>
+                    </div>
+                    <div class="row hidden-xs">
+                        <p class="text-left" style="padding: 2vh 5vw;">
+                        Cốt quà là đầy đủ những đồ đặc trưng ngày Tết nhưng mỗi sản phẩm được lựa chọn từ những vùng miền nổi tiếng:<br><br>
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Rượu Lạc Đạo Bách Nhật<br>
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Hạt bí Mèo<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Mứt gừng<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Mứt dừa<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Hạt điều<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Hạt nho khô<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Kẹo lạc Cổ Đường<br>
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Phong bao lì xì hiện đại<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Hộp và túi sang trọng 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="display:flex;align-items:center;">
+                <div class="col-md-6 col-xs-6 text-center">
+                    <div class="row">
+                        <image src="images/ss5-gcct-text.png" style="width:50%;"></image>
+                    </div>
+                    <div class="row hidden-xs">
+                        <p class="text-left" style="padding: 2vh 5vw;">
+                        Với 600k, gói quà Tết của Giê-gồ, bạn có một gói quà Tết đủ đầy, mang trong mình nét cổ truyền với các lọ mứt, hạt truyền thống mỗi dịp Tết và các sản vật vùng miền của đất mẹ Việt Nam.<br><br>
+                        Chúng tôi yêu cái Tết cổ truyền và mong muốn mỗi gói quà Tết truyền tải được ý nghĩa, tình cảm của người trao đến người nhận từ những chai rượu Lạc Đạo Bách Nhật độc đáo đến câu đối đỏ, phong bao lì xì được bày trí ngay ngắn trong hộp quà.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xs-6 p0 text-left">
+                    <image class="saimg" src="images/ss5-gcct-img.jpg"></image>
+                </div>
+            </div>
+        </div>
+<!-- ******** //Thiết kế sang trọng ********* -->
+    
+    
+    
+    
+<!-- ********* Đầy đặn sung túc ********* -->
+<!-- ******** //Đầy đặn sung túc ******** -->
+
+    
+
+<!-- ************ S3 **************** -->
+    <div class="Session_3 container-fluid" id="session_3">
+        <div class="Session_3_inner">
+            <div class="row text-center">
+                <Span style="color: #ffc548;
+    text-transform: uppercase;
+    font: 550 17px 'Poppins',sans-serif;">Ưu đãi dành cho khách hàng đặt hàng trước 25/1/2018</Span><br>
+                <div class="blinkingPromo text-center">Giảm giá tới 45%</div>
+            </div>
+            <div class="row">
+                <div class="preview col-md-6">					
+                    <div class="preview-pic tab-content">
+                      <div class="tab-pane active" id="pic-1"><img src="images/a1.jpg" /></div>
+                      <div class="tab-pane" id="pic-2"><img src="images/a2.jpg" /></div>
+                      <div class="tab-pane" id="pic-3"><img src="images/a3.jpg" /></div>
+                      <div class="tab-pane" id="pic-4"><img src="images/a4.jpg" /></div>
+                      <div class="tab-pane" id="pic-5"><img src="images/a5.jpg" /></div>
+                    </div>
+                    <ul class="preview-thumbnail nav nav-tabs">
+                      <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="images/a1.jpg" /></a></li>
+                      <li><a data-target="#pic-2" data-toggle="tab"><img src="images/a2.jpg" /></a></li>
+                      <li><a data-target="#pic-3" data-toggle="tab"><img src="images/a3.jpg" /></a></li>
+                      <li><a data-target="#pic-4" data-toggle="tab"><img src="images/a4.jpg" /></a></li>
+                      <li><a data-target="#pic-5" data-toggle="tab"><img src="images/a5.jpg" /></a></li>
+                    </ul>	
+                </div>
+                <div class="details col-md-6">
+                    
+                    <div id="js-product-info" class="product-info" tabindex="-1">
+                        <h4 class="name">Gói quà tết</h4>
+                        <h2 class="edition">GE'RAUD</h2>
+                        <div class="row">
+                            <div class="stars col-xs-6 text-center">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <span class="review-no col-xs-6 text-center">41 đánh giá</span>    
+                        </div>
+                        <div class="row visible-xs">
+                        <p class="text-left" style="padding: 2vh 5vw;">
+                        Cốt quà là đầy đủ những đồ đặc trưng ngày Tết nhưng mỗi sản phẩm được lựa chọn từ những vùng miền nổi tiếng:<br><br>
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Rượu Lạc Đạo Bách Nhật<br>
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Hạt bí Mèo<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Mứt gừng<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Mứt dừa<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Hạt điều<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Hạt nho khô<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Kẹo lạc Cổ Đường<br>
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Phong bao lì xì hiện đại<br> 
+                        <span class="glyphicon glyphicon-gift" style="color:#cdb244;"></span> Hộp và túi sang trọng 
+                        </p>
+                        </div>
+                        <div class="row visible-xs">
+                            <span class="review-no col-xs-12 text-center">Ngày dự kiến nhận quà: 31/1/2018</span>
+                            <span class="review-no col-xs-12 text-center">Giao Hàng Toàn Quốc</span>
+                        </div>
+                        <br><div class="row hidden-xs text-left">
+                            <div class="col-md-6">
+                                <span class="ti">Ngày dự kiến nhận quà</span><br>
+                                <span class="de">5/2/2018</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="ti">Điểm nhận ship quà</span><br>
+                                <span class="de">Toàn Quốc</span>
+                            </div>
+                        </div>
+                        <p class="product-description hidden-xs" style="font-size:0.8em;">Đây là một món quà đẳng cấp, trao đến cho người thân cả sự tinh tuý của đất, nước, trời Việt Nam, chắc chắn đây sẽ là một món quà tết đáng nhớ nhất trong cả cuộc đời người nhận.</p>
+                        <span class="col-xs-12 text-center" style="padding:20px 0; color:#ddd;">Đã đặt trước: 1240/2000 hộp</span>
+                        <h2 class="price">
+                            <del>980.000</del>
+                            590.000
+                            <span class="promo text-center">Pre-order giảm 45%</span>
+                        </h2>
+                       
+                        <div class="row">
+                            <div class="col-xs-2">
+                                <span class="form_label">Số lượng</span>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="input-g">
+                                    <div class="input-group bootstrap-touchspin"><span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;">
+                                        </span>
+                                        <input type="text" value="1" name="Quantity" class="quanity form-control" style="display: block;"  id="sl">
+                                        <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                                        <span class="input-group-btn-vertical">
+                                            <button class="bootstrap-touchspin-up muiten" type="button" onclick="plus()"><i class="glyphicon glyphicon-triangle-top"></i></button>
+                                            <button class="bootstrap-touchspin-down muiten" type="button" onclick="minus()"><i class="glyphicon glyphicon-triangle-bottom"></i></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+<!--                                <button type="button" class="submit_button" data-toggle="modal" data-target="#personal-info" onclick="fbq('track', 'Complete02');">Đặt Hàng Ngay</button>-->
+                                    <a href="#cd" class="submit_button">ĐẶT HÀNG NGAY</a>
+                            </div>
+                            <!-- Modal -->
+<!--
+                            <div id="personal-info" class="modal fade" role="dialog">
+                              <div class="modal-dialog">
+
+                                 Modal content
+                                <div class="modal-content" style="background:#444a62;">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Gói quà tết GE'RAUD</h4>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form action="#" id="preorderform" class="chooseform" method="get" data-redirect="none" novalidate="novalidate">
+                                    <div class="personal-info-left" id="js-personal-info-left" tabindex="-1">
+                                        <div class="row">
+                                            <div class="col-md-4 col-xs-4 form-group">
+                                                <select class="form-control" name="Gender">
+                                                    <option value="gen">Giới tính</option>
+                                                    <option value="Anh">Anh</option>
+                                                    <option value="Chị">Chị</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-8 col-xs-8 form-group">
+                                                <input type="text" name="Name" class="form-control" placeholder="Tên" required="" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="Email" class="form-control" placeholder="Địa chỉ Email" required="" aria-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" name="Tel" class="form-control" placeholder="Số Điện Thoại" required="" aria-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="address" name="Address" class="form-control" placeholder="Địa chỉ nhận quà" required="" aria-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="text-center">Thời gian nhận quà từ <b style="color:red;">31/01/2018 (tức 15 tháng Chạp)</b>.</p>
+                                        </div> 
+                                        <div class="text-center">
+                                            <div id="submit-form">
+                                                <a href="javascript:void(0);" class="btn2" id="next-personal-info-right">Xác nhận đơn hàng</a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="personal-info-right" id="js-personal-info-right" tabindex="-1">
+                                        <h1>Thông tin chuyển khoản</h1><br><br>
+                                        <span>Tên Chủ Tài Khoản: <strong>NGUYỄN TRUNG HIẾU</strong></span><br>
+                                        <span>Ngân hàng Vietcombank - Hội sở chính - stk: 0011004066368</span><br>
+                                        <span>Ngân hàng BIDV - Chi Nhánh Thanh Xuân - stk: 22210003657563</span><br>
+                                        <span>Ngân hàng Techcombank - PGD.Trần Duy Hưng - stk: 19032073796016</span><br><br>
+                                        <p>Quý Khách vui lòng chuyển khoản 300.000VNĐ/hộp quà vào một trong các tài khoản trên, với cú pháp [Geraud - Tên - SĐT - Số lượng hộp] sau khi chuyển khoản, nhân viên Géraud sẽ liên hệ với quý khách trong vòng 30 phút để xác nhận đơn hàng!</p>  
+                                        <div class="modal-footer text-center">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cám ơn Quý Khách</button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+-->
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- *********** //S3 *************** -->
+<!-- ************ S4 **************** -->
+    <div class="session_4 container-fluid" id="session_4">
+            <div class="row text-center">
+                <h1 class="dark">Khách hàng nói về Geraud</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="testimonial">
+                            <div class="testimonial-profile">
+                                <a href="#"><img src="images/testi2.jpg" alt=""></a>
+                            </div>
+                            <div class="testimonial-content">
+                                <h3 class="testimonial-title"><a href="#">Anh Long</a></h3>
+                                <span class="testimonial-post">Nhiếp Ảnh Gia</span>
+                                <p class="testimonial-description">
+                                    Quà tặng khá chất lượng và độc đáo, mình từng thấy nhiều hộp quà nhưng đây là mẫu gây cho mình ấn tượng nhất, rất sang trọng và tinh tế, sản phẩm bên trong cũng thuộc hàng có thương hiệu nên giá trị như vậy rất xứng đáng để bỏ ra
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="testimonial-profile">
+                                <a href="#"><img src="images/testi3.jpg" alt=""></a>
+                            </div>
+                            <div class="testimonial-content">
+                                <h3 class="testimonial-title"><a href="#">Chị Nhi</a></h3>
+                                <span class="testimonial-post">Nhân viên bán hàng</span>
+                                <p class="testimonial-description">
+                                    Theo mình, bộ quà tết này vô cùng sang trọng khi biếu tặng vì toàn là hàng cao cấp có thương hiệu, mới sản xuất. Hộp được thiết kế thanh lịch, rất đẹp nếu dùng để trưng bày ngày Tết
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial">
+                            <div class="testimonial-profile">
+                                <a href="#"><img src="images/testi1a.jpg" alt=""></a>
+                            </div>
+                            <div class="testimonial-content">
+                                <h3 class="testimonial-title"><a href="#">Anh Tuấn</a></h3>
+                                <span class="testimonial-post">Giám đốc công ty</span>
+                                <p class="testimonial-description">
+                                    Hộp quà tết này có thiết kế khá là đẹp, mà giá cả phải chăng, tôi đã mua 200 hộp để tặng nhân viên của mình. Nhìn các em vui mừng nhận hộp quà Ge'raud từ công ty tôi thấy mình đã làm được một việc có ý nghĩa cho ngày Tết của gia đình các em ấy..
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<!-- *********** //S4 *************** -->
+<!-- ************ S5 **************** -->
+    <div class="session_5 container-fluid" id="session_5">
+            <div class="row text-center">
+                <h1 class="light">ĐỐI TÁC của chúng tôi</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-3 text-center">
+                    <a href="#">
+                        <img src="images/dt01.png">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 text-center">
+                    <a href="#">
+                        <img src="images/dt02.png">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 text-center">
+                    <a href="#">
+                        <img src="images/dt03.png">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 text-center">
+                    <a href="#">
+                        <img src="images/dt04.png">
+                    </a>
+                </div>
+            </div>
+    </div>
+<!-- *********** //S5 *************** -->
+<!-- *********** COUNTDOWN TIMER & FORM ***************** -->
+    <div class="container-fluid" style="min-height:50vh;" id="cd">
+        <div class="row" style="display:flex;align-items:center;min-height:50vh;">
+            <div class="col-md-6 col-xs-12 text-center">
+                <h1 id="head">ĐĂNG KÝ NGAY NHẬN KHUYẾN MÃI ĐẾN 45%</h1>
+                  <ul>
+                    <li><span id="days"></span>days</li>
+                    <li><span id="hours"></span>Hours</li>
+                    <li><span id="minutes"></span>Minutes</li>
+                    <li><span id="seconds"></span>Seconds</li>
+                  </ul>
+                <h1 id="head">HOTLINE: 0886.424.536</h1>
+            </div>
+            <div class="col-md-6 hidden-xs">
+                <form action="#" id="preorderform" class="chooseform" method="get" data-redirect="none" novalidate="novalidate">
+                                    <div class="personal-info-left" id="js-personal-info-left" tabindex="-1">
+                                        <div class="row">
+                                            <div class="col-md-4 col-xs-4 form-group">
+                                                <select class="form-control" name="Gender">
+                                                    <option value="gen">Giới tính</option>
+                                                    <option value="Anh">Anh</option>
+                                                    <option value="Chị">Chị</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-8 col-xs-8 form-group">
+                                                <input type="text" name="Name" class="form-control" placeholder="Tên" required="" aria-required="true">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="Email" class="form-control" placeholder="Địa chỉ Email" required="" aria-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" name="Tel" class="form-control" placeholder="Số Điện Thoại" required="" aria-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="address" name="Address" class="form-control" placeholder="Địa chỉ nhận quà" required="" aria-required="true">
+                                        </div>
+                                        <div class="form-group">
+                                            <p class="text-center">Thời gian nhận quà từ <b style="color:red;">31/01/2018 (tức 15 tháng Chạp)</b>.</p>
+                                        </div> 
+                                        <div class="text-center">
+                                            <div id="submit-form">
+                                                <a href="javascript:void(0);" class="btn2" id="next-personal-info-right">Xác nhận đơn hàng</a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="personal-info-right" id="js-personal-info-right" tabindex="-1">
+                                        <h1>Thông tin chuyển khoản</h1><br><br>
+                                        <span>Tên Chủ Tài Khoản: <strong>NGUYỄN TRUNG HIẾU</strong></span><br>
+                                        <span>Ngân hàng Vietcombank - Hội sở chính - stk: 0011004066368</span><br>
+                                        <span>Ngân hàng BIDV - Chi Nhánh Thanh Xuân - stk: 22210003657563</span><br>
+                                        <span>Ngân hàng Techcombank - PGD.Trần Duy Hưng - stk: 19032073796016</span><br><br>
+                                        <p>Quý Khách vui lòng chuyển khoản 300.000VNĐ/hộp quà vào một trong các tài khoản trên, với cú pháp [Geraud-Tên-SĐT-Số hộp] sau khi chuyển khoản, nhân viên Géraud sẽ liên hệ với quý khách trong vòng 30 phút để xác nhận đơn hàng!</p>  
+                                        <div class="modal-footer text-center">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cám ơn Quý Khách</button>
+                                        </div>
+                                    </div>
+                                    </form>
+            </div>
+        </div>
+    </div>
+    
+    
+<!-- ********** //COUNTDOWN TIMER & FORM **************** -->    
+<!-- ************ S6 **************** -->
+    <div class="session_6 container-fluid" id="session_6">
+            <div class="row text-center">
+                <h1 class="dark">LIÊN HỆ</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center cts">
+                    <span><img src="images/lg_loc.png"></span><br>
+                    <div class="cts_text">
+                        <span>KĐT Nghĩa Đô - Cầu Giấy - Hà Nội</span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center cts">
+                    <span><img src="images/lg_phone.png"></span><br>
+                        <div class="cts_text">
+                            <a href="tel:0886424536">0886.424.536</a>
+                        </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center cts">
+                    <span><img src="images/lg_mail.png"></span><br>
+                        <div class="cts_text">
+                            <a href="mailto:geraud@gmail.com?Subject=Đặt%20Hàng%20Quà%20Tết" target="_top">Geraud@gmail.com</a>
+                        </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 text-center cts">
+                    <span><img src="images/lg_fb.png"></span><br>
+                        <div class="cts_text">
+                            <a href="http://www.facebook.com/HopQuaTetTruyenThong">facebook.com/geraud</a>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-4 col-xs-4 col-sm-offset-4 col-sm-4 col-md-offset-5 col-md-2">
+                    <a href="index.html" title="Home">
+                        <img style="width:100%;" src="images/BRANDING-07.png">
+                    </a>
+                </div>
+            </div>
+    </div>
+<!-- *********** //S6 *************** -->
+<!-- CHAT BOX -->
+<style>.fb-livechat,.fb-widget{display:none}.ctrlq.fb-button,.ctrlq.fb-close{position:fixed;right:24px;cursor:pointer}.ctrlq.fb-button{z-index:1;background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyOCAxMjgiIGhlaWdodD0iMTI4cHgiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjggMTI4IiB3aWR0aD0iMTI4cHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnPjxyZWN0IGZpbGw9IiMwMDg0RkYiIGhlaWdodD0iMTI4IiB3aWR0aD0iMTI4Ii8+PC9nPjxwYXRoIGQ9Ik02NCwxNy41MzFjLTI1LjQwNSwwLTQ2LDE5LjI1OS00Niw0My4wMTVjMCwxMy41MTUsNi42NjUsMjUuNTc0LDE3LjA4OSwzMy40NnYxNi40NjIgIGwxNS42OTgtOC43MDdjNC4xODYsMS4xNzEsOC42MjEsMS44LDEzLjIxMywxLjhjMjUuNDA1LDAsNDYtMTkuMjU4LDQ2LTQzLjAxNUMxMTAsMzYuNzksODkuNDA1LDE3LjUzMSw2NCwxNy41MzF6IE02OC44NDUsNzUuMjE0ICBMNTYuOTQ3LDYyLjg1NUwzNC4wMzUsNzUuNTI0bDI1LjEyLTI2LjY1N2wxMS44OTgsMTIuMzU5bDIyLjkxLTEyLjY3TDY4Ljg0NSw3NS4yMTR6IiBmaWxsPSIjRkZGRkZGIiBpZD0iQnViYmxlX1NoYXBlIi8+PC9zdmc+) center no-repeat #0084ff;width:60px;height:60px;text-align:center;bottom:24px;border:0;outline:0;border-radius:60px;-webkit-border-radius:60px;-moz-border-radius:60px;-ms-border-radius:60px;-o-border-radius:60px;box-shadow:0 1px 6px rgba(0,0,0,.06),0 2px 32px rgba(0,0,0,.16);-webkit-transition:box-shadow .2s ease;background-size:80%;transition:all .2s ease-in-out}.ctrlq.fb-button:focus,.ctrlq.fb-button:hover{transform:scale(1.1);box-shadow:0 2px 8px rgba(0,0,0,.09),0 4px 40px rgba(0,0,0,.24)}.fb-widget{background:#fff;z-index:2;position:fixed;width:300px;height:435px;overflow:hidden;opacity:0;bottom:0;right:24px;border-radius:6px;-o-border-radius:6px;-webkit-border-radius:6px;box-shadow:0 5px 40px rgba(0,0,0,.16);-webkit-box-shadow:0 5px 40px rgba(0,0,0,.16);-moz-box-shadow:0 5px 40px rgba(0,0,0,.16);-o-box-shadow:0 5px 40px rgba(0,0,0,.16)}.fb-credit{text-align:center;margin-top:8px}.fb-credit a{transition:none;color:#bec2c9;font-family:Helvetica,Arial,sans-serif;font-size:12px;text-decoration:none;border:0;font-weight:400}.ctrlq.fb-overlay{z-index:0;position:fixed;height:100vh;width:100vw;-webkit-transition:opacity .4s,visibility .4s;transition:opacity .4s,visibility .4s;top:0;left:0;background:rgba(0,0,0,.05);display:none}.ctrlq.fb-close{z-index:4;padding:0 6px;background:#365899;font-weight:700;font-size:11px;color:#fff;margin:8px;border-radius:3px}.ctrlq.fb-close::after{content:'x';font-family:sans-serif}</style>
+
+<div class="fb-livechat">
+  <div class="ctrlq fb-overlay"></div>
+  <div class="fb-widget">
+    <div class="ctrlq fb-close"></div>
+    <div class="fb-page" data-href="https://www.facebook.com/HopQuaTetTruyenThong/" data-tabs="messages" data-width="300" data-height="400" data-small-header="true" data-hide-cover="true" data-show-facepile="false">
+      <blockquote cite="https://www.facebook.com/HopQuaTetTruyenThong/" class="fb-xfbml-parse-ignore"> </blockquote>
+    </div>
+    <div class="fb-credit"> 
+      <a href="#">Facebook Chat Widget by Ge'raud</a>
+    </div>
+    <div id="fb-root"></div>
+  </div>
+  <a href="https://m.me/HopQuaTetTruyenThong" title="Send us a message on Facebook" class="ctrlq fb-button"></a> 
+</div>
+	
+<script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9"></script>
+<script>
+$(document).ready(function(){
+var t={delay:125,overlay:$(".fb-overlay"),widget:$(".fb-widget"),button:$(".fb-button")};setTimeout(function(){$("div.fb-livechat").fadeIn()},8*t.delay),$(".ctrlq").on("click",function(e){e.preventDefault(),t.overlay.is(":visible")?(t.overlay.fadeOut(t.delay),t.widget.stop().animate({bottom:0,opacity:0},2*t.delay,function(){$(this).hide("slow"),t.button.show()})):t.button.fadeOut("medium",function(){t.widget.stop().show().animate({bottom:"30px",opacity:1},2*t.delay),t.overlay.fadeIn(t.delay)})})});</script>
+<!-- //CHAT BOX -->
+    </body>
+</html>
