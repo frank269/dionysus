@@ -1,7 +1,7 @@
 body{
 	margin:0;
 	font-family: 'Open Sans', sans-serif;
-    background: url(../images/banner.jpg)repeat 0px 0px;
+    background: url(images/banner.jpg)repeat 0px 0px;
     background-size: cover;
 } 
 body a,input[type="submit"],a,.w3ls_footer_grid_left1_pos ul li a i{
@@ -71,7 +71,7 @@ p,ul li,ol li{
 .hero {
     display: table;
     position: relative;
-    background-image: url(../images/ss1.jpg);
+    background-image: url(images/ss1.jpg);
     background-position:center;
     background-size: cover;
     padding: 80px;
@@ -122,7 +122,7 @@ a {
 @media screen and (max-width:415px){
     .hero{
         padding:40px 0;
-        background-image: url(../images/anh_header_mobile.jpg);
+        background-image: url(images/anh_header_mobile.jpg);
     }
     .hero-brand{
         width:90vw;
@@ -166,13 +166,13 @@ a {
 .hm{
     min-height:40vh;
     width:100%;
-    background: url("../images/cacloaisp.png") no-repeat;
+    background: url("images/cacloaisp.png") no-repeat;
     background-size:cover;
     background-position:center;
 }
 @media screen and (max-width:415px){
     .hm{
-    background: url("../images/ss3-mutvahat_mb.jpg") no-repeat;
+    background: url("images/ss3-mutvahat_mb.jpg") no-repeat;
     background-size:cover;
     background-position:center;
     }
@@ -182,13 +182,13 @@ a {
 .ldbn{
     min-height:40vh;
     width:100%;
-    background: url("../images/ss4-lacdaobachnhat-web.jpg") no-repeat;
+    background: url("images/ss4-lacdaobachnhat-web.jpg") no-repeat;
     background-size:cover;
     background-position:center;
 }
 @media screen and (max-width:415px){
     .ldbn{
-    background: url("../images/ss4-lacdaobachnhat-mb.jpg") no-repeat;
+    background: url("images/ss4-lacdaobachnhat-mb.jpg") no-repeat;
     background-size:cover;
     background-position:center;
     }
@@ -198,13 +198,13 @@ a {
 .tsgr{
     min-height:40vh;
     width:100%;
-    background: url("../images/ss5-taisao-web.jpg") no-repeat;
+    background: url("images/ss5-taisao-web.jpg") no-repeat;
     background-size:cover;
     background-position:center;
 }
 @media screen and (max-width:415px){
     .tsgr{
-    background: url("../images/ss5-taisao-mb.jpg") no-repeat;
+    background: url("images/ss5-taisao-mb.jpg") no-repeat;
     background-size:cover;
     background-position:center;
     }
@@ -239,7 +239,7 @@ a {
 .Session_3{
     padding:5vh 15vw;
     background: #444a62;
-    background-image: url("../images/BG.jpg");
+    background-image: url("images/BG.jpg");
 	color: #fff;
 	background-position: bottom;
 }
@@ -532,7 +532,7 @@ a {
 @media screen and (max-width:415px){
     .Session_3{
     padding:3vh 10vw;
-    background:#444a62 url("../images/ss3_mb.png") bottom no-repeat;
+    background:#444a62 url("images/ss3_mb.png") bottom no-repeat;
     }
     .name {
     color: #fff;
@@ -629,7 +629,7 @@ a {
 
 /*-- Session 4 --*/
 .session_4{
-    background: url(../images/bg_KH.png);
+    background: url(images/bg_KH.png);
     min-height: 50%;
     background-size: cover;
 }
@@ -761,7 +761,7 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),inset 0px 3px 8px rgba(0, 0, 0, 0.3);
 /*-- Session 6--*/
 .session_6{
     background-color:rgba(0,0,0,0.65);
-    background-image: url("../images/cts-bg.png");
+    background-image: url("images/cts-bg.png");
     color:#fff;
     min-height:50vh;
     background-position: center;
@@ -784,7 +784,7 @@ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3),inset 0px 3px 8px rgba(0, 0, 0, 0.3);
 @media screen and (max-width:415px)
 {
     .session_6{
-        background:url("../images/ss6_bg_mb.png");
+        background:url("images/ss6_bg_mb.png");
         padding: 3vh 10vw;
     }
     .cts_text{
